@@ -8,9 +8,18 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="yourName" type="string" required="false">
+            <!-- <property key="yourName" type="string" required="false">
                 <caption>Name</caption>
                 <description>Enter your name</description>
+            </property> -->
+            <property key="unitId" type="string" required="false" multiline="false">
+              <caption>Ad Unit ID</caption>
+              <description></description>
+            </property>
+            <property key="testMode" type="expression" defaultValue="true">
+              <caption>Test Mode?</caption>
+              <description>If true, renders a test ad, otherwise, a real one.</description>
+              <returnType type="Boolean" />
             </property>
         </propertyGroup>
     </properties>

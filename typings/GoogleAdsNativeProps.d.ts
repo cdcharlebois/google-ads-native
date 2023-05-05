@@ -4,11 +4,13 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
 
 export interface GoogleAdsNativeProps<Style> {
     name: string;
     style: Style[];
-    yourName: string;
+    unitId: string;
+    testMode: DynamicValue<boolean>;
 }
 
 export interface GoogleAdsNativePreviewProps {
@@ -20,5 +22,6 @@ export interface GoogleAdsNativePreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    yourName: string;
+    unitId: string;
+    testMode: string;
 }

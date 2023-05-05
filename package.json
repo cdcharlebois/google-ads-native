@@ -10,7 +10,7 @@
   },
   "license": "Apache-2.0",
   "config": {
-    "projectPath": "./tests/testProject"
+    "projectPath": ""
   },
   "packagePath": "mendix",
   "scripts": {
@@ -28,6 +28,6 @@
     "@types/react-native": "~0.63.52"
   },
   "dependencies": {
-
+    "react-native-google-mobile-ads": "^9.1.2"
   }
 }
