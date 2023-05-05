@@ -6,11 +6,14 @@
 import { CSSProperties } from "react";
 import { DynamicValue } from "mendix";
 
+export type SizeEnum = "ANCHORED_ADAPTIVE_BANNER" | "BANNER" | "FULL_BANNER" | "INLINE_ADAPTIVE_BANNER" | "LARGE_BANNER" | "LEADERBOARD" | "MEDIUM_RECTANGLE";
+
 export interface GoogleAdsNativeProps<Style> {
     name: string;
     style: Style[];
     unitId: string;
     testMode: DynamicValue<boolean>;
+    size: SizeEnum;
 }
 
 export interface GoogleAdsNativePreviewProps {
@@ -24,4 +27,5 @@ export interface GoogleAdsNativePreviewProps {
     readOnly: boolean;
     unitId: string;
     testMode: string;
+    size: SizeEnum;
 }

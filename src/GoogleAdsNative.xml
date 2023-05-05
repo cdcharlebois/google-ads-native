@@ -21,6 +21,19 @@
               <description>If true, renders a test ad, otherwise, a real one.</description>
               <returnType type="Boolean" />
             </property>
+            <property key="size" type="enumeration" defaultValue="ANCHORED_ADAPTIVE_BANNER" required="true">
+              <caption>Ad Size</caption>
+              <description></description>
+              <enumerationValues>
+                <enumerationValue key="ANCHORED_ADAPTIVE_BANNER">Anchored Adaptive Banner (Default)</enumerationValue>
+                <enumerationValue key="BANNER">Banner (320x50 density-independent pixels)</enumerationValue>
+                <enumerationValue key="FULL_BANNER">Full Banner (468x60 density-independent pixels)</enumerationValue>
+                <enumerationValue key="INLINE_ADAPTIVE_BANNER">Inline Adaptive Banner (Variable height, for scrolling content)</enumerationValue>
+                <enumerationValue key="LARGE_BANNER">Large Banner (320x100 density-independent pixels)</enumerationValue>
+                <enumerationValue key="LEADERBOARD">Leaderboard (728x90 density-independent pixels)</enumerationValue>
+                <enumerationValue key="MEDIUM_RECTANGLE">Medium Rectangle (300x250 density-independent pixels)</enumerationValue>
+              </enumerationValues>
+            </property>
         </propertyGroup>
     </properties>
 </widget>
